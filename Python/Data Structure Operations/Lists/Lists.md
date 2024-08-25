@@ -17,6 +17,8 @@ my_list = []
 # List with initial elements
 numbers = [1, 2, 3, 4, 5]
 
+# List with initialized variables
+tenzeros = [0] * 10
 # List comprehension
 squares = [x**2 for x in range(10)]
 ```
@@ -31,7 +33,7 @@ last_element = numbers[-1]
 ```python
 numbers.append(6)        # Add to end
 numbers.insert(0, 0)     # Insert at specific index
-numbers.extend([7, 8, 9])  # Add multiple elements
+numbers.extend([7, 8, 9])  # Add multiple elements, from another list
 ```
 
 ### Removing Elements
