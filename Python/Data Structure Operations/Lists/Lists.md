@@ -56,6 +56,29 @@ if 3 in numbers:
     print("3 is in the list")
 ```
 
+### Copy vs Deep Copy
+
+**Shallow Copy (A regular copy).**
+Creates now object but references the same memory addresses for NESTED objects
+```python
+import copy
+
+original_list = [1, [2, 3], {'a': 4}]
+shallow_copy = copy.copy(original_list)
+# or
+shallow_copy = original_list.copy()
+# or
+shallow_copy = original_list[:] slicing
+```
+**Deep Copy**
+Creates new object and recursively copies all nested objects
+```python
+import copy
+
+original_list = [1, [2, 3], {'a': 4}]
+deep_copy = copy.deepcopy(original_list)
+```
+
 ## List as Other Data Structures
 
 ### List as a Stack
