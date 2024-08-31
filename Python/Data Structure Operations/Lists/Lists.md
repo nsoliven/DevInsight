@@ -81,6 +81,8 @@ deep_copy = copy.deepcopy(original_list)
 
 ## List as Other Data Structures
 
+In Python, 
+
 ### List as a Stack
 ```python
 stack = []
@@ -90,23 +92,6 @@ top_element = stack.pop()  # Pop
 peek = stack[-1]    # Peek
 ```
 
-### List as a Queue
-```python
-from collections import deque
-queue = deque([])
-queue.append(1)     # Enqueue
-queue.append(2)
-front_element = queue.popleft()  # Dequeue
-```
-
-### List as a Heap
-```python
-import heapq
-heap = []
-heapq.heappush(heap, 3)
-heapq.heappush(heap, 1)
-smallest = heapq.heappop(heap)
-```
 
 ## Advanced Operations
 

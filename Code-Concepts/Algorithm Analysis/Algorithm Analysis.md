@@ -23,3 +23,4 @@ def find_max(arr):
 We can see that part that will "grow" with input size is the array. We are iterating through the array with the for loop.
 
 We can apply [[Big O Notation]] here, and see in the worst, average, and best case we will have to iterate through the whole array, thus we have $O(n)$ time, where n is the size of the algorithm. This is [[Linear Growth]]. 
+
